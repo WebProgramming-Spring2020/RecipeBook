@@ -112,10 +112,33 @@
 		
 	}
 
+	/* Clear floats after image containers */
+	.row::after {
+  		content: "";
+  		clear: both;
+  		display: table;
+	}
+
+	/* Container or image grid for recipes */
+	.imageGrid{
+		display: flex;
+    	justify-content: center;
+    	align-items: center;
+	}
 	
-
-
-
+	.column {
+  		float: left;
+  		width: 15%;
+  		padding: 10px;
+	}
+	
+	.gridImage {
+		width:100%;
+	}
+	
+	.about{
+		clear:both;
+	}
 	</style>
 
 </html>
