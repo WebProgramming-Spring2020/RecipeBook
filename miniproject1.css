@@ -111,6 +111,11 @@
 		color: darkred;
 		
 	}
+/*All classes under this are for Recipe Grid */	
+
+	.row{
+		margin-top: 10px;
+	}
 
 	/* Clear floats after image containers */
 	.row::after {
@@ -135,7 +140,12 @@
 	.gridImage {
 		width:100%;
 	}
-	
+	p.textUnderImage{
+	margin: 0 0 20px 0;
+	text-align: center;
+	}
+/*All classes above this are for Recipe Grid */	
+
 	.about{
 		clear:both;
 	}
