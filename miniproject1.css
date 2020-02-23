@@ -18,6 +18,18 @@
 		top: 0;
 		z-index: 1;
 	}
+	
+	.recipeTitle{
+		font-family: "Playfair Display";
+		letter-spacing: 10px;
+		text-align: center;
+		font-size: 30pt;
+		color: darkred;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 15px;
+		z-index: 1;
+	}
 
 	.container {
 		display: block;
