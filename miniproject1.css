@@ -371,7 +371,12 @@
 		padding-left: 3px;
 	}
 
-
+	.centerImg {
+  		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+  		width: 40%;
+	}
 	</style>
 
 </html>
