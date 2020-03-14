@@ -1,5 +1,7 @@
-<
-html> <style>.center {
+/* <
+html> <style>*/
+
+.center { 
 	text-align: center;
 }
 
@@ -149,46 +151,16 @@ li a {
 	text-decoration: none;
 }
 
-li
-
- 
-
-a
-
-
-:hover
-
-
-:not
-
- 
-
-(
-.active
-
- 
-
-)
-{
-background-color
-
-
-:
-
- 
-
-Gray
-
-
-;
+li a :hover :not(.active){
+	background-color:Gray;
 }
+
 .active {
 	background-color: White;
 	color: white;
 }
 
 .navbar {
-	overflow: hidden;
 	background-color: white;
 	opacity: 1.0;
 	position: fixed;
@@ -196,6 +168,7 @@ Gray
 	top: 0;
 	left: 0;
 	width: 100%;
+
 }
 
 .navbar a {
@@ -585,10 +558,12 @@ select {
 .searchBox form .inner-form .advance-search .input-select {
 	height: 40px;
 }
-}
+
+
+/*}
 </
 style
 >
 </
 html
->
+>*/
