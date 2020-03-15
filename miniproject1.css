@@ -5,28 +5,192 @@ html> <style>*/
 	text-align: center;
 }
 
-.title {
-	font-family: "Playfair Display";
-	letter-spacing: 10px;
-	text-align: center;
-	font-size: 50pt;
-	color: darkred;
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-	z-index: 1;
+@media only screen and (min-width: 1100px){
+	.title {
+		font-family: "Playfair Display";
+		letter-spacing: 10px;
+		text-align: center;
+		font-size: 50pt;
+		color: darkred;
+		/* position: -webkit-sticky; */
+		position: sticky;
+		top: 0;
+		z-index: 1;
+	}
+	.topR {
+		margin-top: 27px;
+		margin-right: 10px;
+		padding-right: 5px;
+		position: fixed;
+		float: right;
+		text-align: right;
+		width: 100%;
+		z-index: 2;
+		top: 0;
+		font-size: 14pt;
+		font-family: "Playfair Display";
+		color: darkred;
+		letter-spacing: 3px;
+	}
+	.recipeTitle {
+		font-family: "Playfair Display";
+		letter-spacing: 10px;
+		text-align: center;
+		font-size: 30pt;
+		color: darkred;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 15px;
+		z-index: 1;
+	}
 }
 
-.recipeTitle {
-	font-family: "Playfair Display";
-	letter-spacing: 10px;
-	text-align: center;
-	font-size: 30pt;
-	color: darkred;
-	position: -webkit-sticky;
-	position: sticky;
-	top: 15px;
-	z-index: 1;
+@media only screen and 
+(max-width: 1099px) and
+(min-width: 800px){
+	.title {
+		font-family: "Playfair Display";
+		letter-spacing: 7px;
+		text-align: center;
+		font-size: 50pt;
+		color: darkred;
+		/* position: -webkit-sticky; */
+		position: sticky;
+		top: 0;
+		z-index: 1;
+	}
+	.topR {
+		padding-top: 8px;
+		padding-right: 10px;
+		position: fixed;
+		float: right;
+		text-align: right;
+		width: 100%;
+		z-index: 2;
+		top: 0;
+		font-size: 14pt;
+		font-family: "Playfair Display";
+		color: darkred;
+		letter-spacing: 3px;
+	}
+	.topRdis {
+		float: right;
+		text-align: right;
+		width: 100%;
+		z-index: -1;
+		top: 0;
+		font-size: 14pt;
+		font-family: "Playfair Display";
+		color: darkred;
+		letter-spacing: 3px;
+	}
+	.recipeTitle {
+		font-family: "Playfair Display";
+		letter-spacing: 10px;
+		text-align: center;
+		font-size: 30pt;
+		color: darkred;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 15px;
+		z-index: 1;
+	}
+}
+
+
+@media only screen and 
+(max-width: 799px) and
+(min-width: 650px){
+	.title {
+		font-family: "Playfair Display";
+		letter-spacing: 4px;
+		text-align: center;
+		font-size: 40pt;
+		color: darkred;
+		/* position: -webkit-sticky; */
+		position: sticky;
+		top: 10px;
+		z-index: 1;
+	}
+	.topR {
+		padding-top: 10px;
+		padding-right: 10px;
+		position: fixed; 
+		float: right;
+		text-align: right;
+		width: 100%;
+		z-index: 2;
+		top: 0;
+		font-size: 14pt;
+		font-family: "Playfair Display";
+		color: darkred;
+		letter-spacing: 2px;
+	}
+		.topRdis {
+		float: right;
+		text-align: right;
+		width: 100%;
+		z-index: -1;
+		top: 0;
+		font-size: 12pt;
+		font-family: "Playfair Display";
+		color: darkred;
+		letter-spacing: 3px;
+	}
+	.recipeTitle {
+		font-family: "Playfair Display";
+		letter-spacing: 8px;
+		text-align: center;
+		font-size: 25pt;
+		color: darkred;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 15px;
+		z-index: 1;
+	}
+
+}
+
+@media only screen and 
+(max-width: 649px) and
+(min-width: 550px) {
+	.title {
+		font-family: "Playfair Display";
+		letter-spacing: 2px;
+		text-align: center;
+		font-size: 30pt;
+		color: darkred;
+		/* position: -webkit-sticky; */
+		position: sticky;
+		top: 15px;
+		z-index: 1;
+	}
+	.recipeTitle {
+		font-family: "Playfair Display";
+		letter-spacing: 5px;
+		text-align: center;
+		font-size: 25pt;
+		color: darkred;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 15px;
+		z-index: 1;
+	}
+}
+
+@media only screen and 
+(max-width: 549px) {
+		.recipeTitle {
+		font-family: "Playfair Display";
+		letter-spacing: 3px;
+		text-align: center;
+		font-size: 20pt;
+		color: darkred;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 15px;
+		z-index: 1;
+	}
 }
 
 .container {
@@ -190,20 +354,9 @@ li a :hover :not(.active){
 	top: 0;
 }
 
-.topR {
-	margin-top: 27px;
-	margin-right: 10px;
-	padding-right: 5px;
-	position: fixed;
-	float: right;
-	text-align: right;
-	width: 100%;
-	z-index: 2;
-	top: 0;
-	font-size: 14pt;
-	font-family: "Playfair Display";
-	color: darkred;
-	letter-spacing: 5px;
+
+@media only screen and (max-width: 1099px){
+	
 }
 
 a:link {
