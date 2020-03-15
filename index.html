@@ -9,7 +9,7 @@
 
 <body>
 	<script type="text/javascript" src="dateTime.js"></script>
-
+	<script type="text/javascript" src="search.js"></script>
 	<script type="text/javascript" src="miniproject1.js"></script>
 	<div class="navbar">
 		<a href="#Home" class="topL">Home</a>
@@ -53,7 +53,7 @@
 	<h1>Search Recipes</h1>
 
 	<div class="searchBox">
-		<form>
+		<form method="POST" action="search.php">
 			<div class="inner-form">
 				<div class="basic-search">
 					<div class="input-field">
@@ -111,7 +111,7 @@
 							</div>
 							<div class="group-btn">
 								<button class="btn-delete" id="delete">RESET</button>
-								<button class="btn-search">SEARCH</button>
+								<button class="btn-search" id="submit" name="submit" >SEARCH</button>
 							</div>
 						</div>
 					</div>
