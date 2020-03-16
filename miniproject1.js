@@ -18,6 +18,6 @@ function startTimer(duration, display) {
 var timeMe = function () {
     var x = 25;
     var mins = 60 * x,
-        display = document.querySelector('#time');
+        display = document.querySelector('#time1');
     startTimer(mins, display);
 };

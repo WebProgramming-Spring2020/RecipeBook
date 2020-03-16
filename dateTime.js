@@ -1,4 +1,3 @@
-
 var countDownDate = new Date("May 5, 2020 17:30:00").getTime();
 
 var x = setInterval(function() {
