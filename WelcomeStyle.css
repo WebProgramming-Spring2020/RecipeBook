@@ -1,0 +1,26 @@
+
+
+
+body{
+
+	letter-spacing: 5px;
+	color: darkred;
+	text-align: center;
+	font-family: "Playfair Display";
+	font-size: 24pt;
+	margin-top: 15%;
+	opacity: 1;
+    animation: fade 2s linear;
+	-webkit-animation: fadeinout 4s linear forwards;
+    animation: fadeinout 4s linear forwards;
+}
+
+@-webkit-keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
