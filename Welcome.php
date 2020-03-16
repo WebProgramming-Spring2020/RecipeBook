@@ -11,8 +11,8 @@
 
 	session_start();
 	$target = "email";
-	$linkname = "SignIn.html";
-	link($target, $link);
+	$linkname = "SignIn.php";
+	// link($target, $link);
 
 
 
@@ -26,7 +26,7 @@
 
 		
 	?>
-	<meta http-equiv="refresh" content="5;url=http://codd.cs.gsu.edu/~hkhan14/MiniProjects/2/index.html">
+	<meta http-equiv="refresh" content="5; url=index.php">
 
 	
 
