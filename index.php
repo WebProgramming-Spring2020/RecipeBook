@@ -1,3 +1,16 @@
+<?php
+
+session_start();
+
+$user = "Login";
+
+if ($_SESSION['email'] != ""){
+	$user = $_SESSION['email'];
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -17,7 +30,7 @@
 
 	</div>
 	<div class="topR">
-		<a href="http://codd.cs.gsu.edu/~hkhan14/MiniProjects/2/SignIn.html" class="topRdis">Login</a>
+		<a href="SignIn.php" id="login" class="topRdis"><?php echo $user ?></a>
 		<span class="tab"></span>
 		<a href="#FAQ" class="topRdis">FAQ</a>
 		<span class="tab"></span>

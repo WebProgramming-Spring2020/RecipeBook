@@ -1,3 +1,9 @@
+<?php
+
+session_start();
+
+?>
+
 <html>
 <head>
 	<meta charset="utf-8">
@@ -9,7 +15,7 @@
 	<h1>Welcome to Code Chef Recipes!</h1>
 	<div class="container">
 		<div class="sign-in-container">
-			<form action="http://codd.cs.gsu.edu/~hkhan14/MiniProjects/2/Welcome.php" method="post"> <!-- Will link to home -->
+			<form action="Welcome.php" method="post"> <!-- Will link to home -->
 				<h2>Sign in</h2>
 				<input type="email" id="email" placeholder="Email" name="email" /> <br>
 				<input type="password" id="password" placeholder="Password" name="password" /> <br>
