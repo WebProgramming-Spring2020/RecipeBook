@@ -374,7 +374,12 @@ if ($_SESSION['email'] != ""){
 		<p>
 			YouTube Link 2:<span class="contactinfoR"></span>
 			<span class="tab"></span>
-			<a href="">Mini-Project 2 </a>
+			<a href="https://www.youtube.com/watch?v=nzlZeg3XfxE&t=4s">Mini-Project 2 </a>
+		</p>
+		<p>
+			YouTube Link 3:<span class="contactinfoR"></span>
+			<span class="tab"></span>
+			<a href="">Mini-Project 3 </a>
 		</p>
 		<p>
 			Countdown Timer: <span id="demo"></span>
