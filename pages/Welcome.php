@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Welcome!</title>
-		<link rel="stylesheet" type="text/css" href="WelcomeStyle.css"> 
+		<link rel="stylesheet" type="text/css" href="../WelcomeStyle.css"> 
 </head>
 <body>
 

@@ -12,6 +12,7 @@ if ($_SESSION['email'] != ""){
 	$link = "account.php";
 }
 
+
 ?>
 
 
@@ -20,7 +21,7 @@ if ($_SESSION['email'] != ""){
 
 <head>
 	<title>Code Chef Recipes</title>
-	<link rel="stylesheet" type="text/css" href="miniproject1.css">
+	<link rel="stylesheet" type="text/css" href="../miniproject1.css">
 
 </head>
 
@@ -30,7 +31,7 @@ if ($_SESSION['email'] != ""){
 	<script type="text/javascript" src="miniproject1.js"></script>
 	<div class="navbar">
 		<a href="index.php" class="topL">Home</a>
-		<img src="codecheflogo.jpg" class="codecheflogo">
+		<img src="../images/codecheflogo.jpg" class="codecheflogo">
 
 	</div>
 	<div class="topR">
@@ -52,6 +53,7 @@ if ($_SESSION['email'] != ""){
 
 	<div class="title">Welcome <?php echo $user?></div>
 
+	<a href="logout.php" style="text-align: center">Logout</a>
 	<br>
 	<br>
 	</body>

@@ -1,21 +1,37 @@
+<?php
+
+session_start();
+
+$user = "Login";
+$link = "../SignIn.php";
+
+if ($_SESSION['email'] != ""){
+	$user = $_SESSION['email'];
+	$u = explode("@",$user);
+	$user = $u[0];
+	$link = "../account.php";
+}
+
+?>
+
 <!doctype html>
 <html>
 <head>
 <title>Code Chefs: Chicken Parm</title>
-<link rel="stylesheet" type="text/css" href="miniproject1.css">
+<link rel="stylesheet" type="text/css" href="../../miniproject1.css">
 
 </head>
 <body>
-<script type = "text/javascript" src = "miniproject1.js"></script>
-<script type = "text/javascript" src = "miniproject2.js"></script>
+<script type = "text/javascript" src = "../../miniproject1.js"></script>
+<script type = "text/javascript" src = "../../miniproject2.js"></script>
 
 	<!-- Nav Bar -->
 	<div class="navbar">
-		<a href="index.php" class="topL">Home</a><img src="codecheflogo.jpg"
+		<a href="../index.php" class="topL">Home</a><img src="../../images/codecheflogo.jpg"
 			class="codecheflogo">
 	</div>
 	<div class="topR">
-		<a href="login.html" class="topRdis">Login</a> 
+		<a href="<?php echo $link ?>" id="login" class="topRdis"><?php echo $user ?></a>
 		<span class="tab"></span> 
 		<a href="#FAQ" class="topRdis">FAQ</a>
 		<span class="tab"></span> 
@@ -37,7 +53,7 @@
 	<br>
 
 	<div>
-		<img src="chickenparm.jpeg" class="centerImg">
+		<img src="../../images/chickenparm.jpeg" class="centerImg">
 	</div>
 
 	<aside style="flex-basis: 33%; padding: 2em; margin: 2em;">
@@ -93,11 +109,3 @@
 
 </body>
 </html>
-
-<!-- 4 chicken breasts, about 8 oz each, sliced in half lengthwise to make 8
-3/4 cup seasoned breadcrumbs, I used whole wheat, you can also use GF crumbs
-1/4 cup grated Parmesan cheese
-2 tbsp butter, melted (or olive oil)
-3/4 cup reduced fat mozzarella cheese, I used Polly-o
-1 cup marinara or Filetto di Pomodoro
-cooking spray -->

@@ -1,17 +1,17 @@
 <?php
 
 	session_start();
-
 ?>
+
 
 <html>
 <head>
 	<meta charset="utf-8">
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="SignInStyle.css">
+	<link rel="stylesheet" type="text/css" href="../SignInStyle.css">
 </head>
 <body>
-	
+
 	<h1>Welcome to Code Chef Recipes!</h1>
 	<div class="container">
 		<div class="sign-in-container">
@@ -27,7 +27,7 @@
 		<div class="sign-up-container">
 			<h2>Don't have an account?</h2>
 			<p>Sign up and start enjoying our recipes!</p>
-			<a href= "SignUp.php"><button class="ghost">Join Now</button></a>
+			<a href= "SignUp.html"><button class="ghost">Join Now</button></a>
 		</div> <!-- end of sign-up container -->
 	</div> <!-- end of container -->
 <?php
@@ -50,9 +50,9 @@
 
 	
 	if(mysqli_query($conn, $sql)) {
-		echo "";
+		echo "Records added successfully.";
 	} else {
-		echo ""; 
+		echo "Error"; 
 	}
 	mysqli_close($conn);
 ?>

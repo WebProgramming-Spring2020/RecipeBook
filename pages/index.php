@@ -1,5 +1,6 @@
 <?php
 
+
 session_start();
 
 $user = "Login";
@@ -12,6 +13,8 @@ if ($_SESSION['email'] != ""){
 	$link = "account.php";
 }
 
+
+
 ?>
 
 
@@ -20,7 +23,7 @@ if ($_SESSION['email'] != ""){
 
 <head>
 	<title>Code Chef Recipes</title>
-	<link rel="stylesheet" type="text/css" href="miniproject1.css">
+	<link rel="stylesheet" type="text/css" href="../miniproject1.css">
 
 </head>
 
@@ -29,8 +32,8 @@ if ($_SESSION['email'] != ""){
 	<script type="text/javascript" src="search.js"></script>
 	<script type="text/javascript" src="miniproject1.js"></script>
 	<div class="navbar">
-		<a href="index.php#Home" class="topL">Home</a>
-		<img src="codecheflogo.jpg" class="codecheflogo">
+		<a href="/pages/index.php#Home" class="topL">Home</a>
+		<img src="../images/codecheflogo.jpg" class="codecheflogo">
 
 	</div>
 	<div class="topR">
@@ -151,9 +154,9 @@ if ($_SESSION['email'] != ""){
 	<div class="imageGrid">
 		<div class="column">
 			<div class="row">
-				<a href="ChickenParm.html">
+				<a href="recipes/ChickenParm.php">
 					<div class="containerimg">
-						<img src="chickenparm.jpeg" class="gridImage">
+						<img src="../images/chickenparm.jpeg" class="gridImage">
 						<div class="overlay">
 							<div class="text">Pasta with baked breaded chicken cutlets
 								topped with homemade marinara sauce and melted mozzerella
@@ -164,9 +167,9 @@ if ($_SESSION['email'] != ""){
 				<p class="textUnderImage">Baked Chicken Parm</p>
 			</div>
 			<div class="row">
-				<a href="vegan_mac_and_cheese.html">
+				<a href="recipes/vegan_mac_and_cheese.php">
 					<div class="containerimg">
-						<img src="vegan_mac_and_cheese.jpeg" class="gridImage">
+						<img src="../images/vegan_mac_and_cheese.jpeg" class="gridImage">
 						<div class="overlay">
 							<div class="text">Tender macaroni pasta is tossed in a
 								creamy cashew “cheese” sauce!</div>
@@ -178,9 +181,9 @@ if ($_SESSION['email'] != ""){
 		</div>
 		<div class="column">
 			<div class="row">
-				<a href="pumpkin-soup.html">
+				<a href="recipes/pumpkin-soup.php">
 					<div class="containerimg">
-						<img src="pumpkinsoup.png" class="gridImage">
+						<img src="../images/pumpkinsoup.png" class="gridImage">
 						<div class="overlay">
 							<div class="text">This Creamy Pumpkin Ginger Soup is the perfect cozy, fall soup made creamy without adding any cream!</div>
 						</div>
@@ -189,9 +192,9 @@ if ($_SESSION['email'] != ""){
 				<p class="textUnderImage">Creamy Pumpkin Soup</p>
 			</div>
 			<div class="row">
-				<a href = "savory_meatloaf.html">
+				<a href = "recipes/savory_meatloaf.php">
 					<div class="containerimg">
-						<img src="savory_meatloaf.jpeg" class="gridImage">
+						<img src="../images/savory_meatloaf.jpeg" class="gridImage">
 						<div class="overlay">
 							<div class="text">Savory and tender meatloaf made with ground beef and oatmeal. Delicious and hearty!
 							</div>
@@ -203,21 +206,21 @@ if ($_SESSION['email'] != ""){
 		</div>
 		<div class="column">
 			<div class="row">
-				<a href="paleo_salmon.html">
+				<a href="recipes/paleo_salmon.php">
 					<div class="containerimg">
-						<img src="paleo_salmon.jpg" class="gridImage">
+						<img src="../images/paleo_salmon.jpg" class="gridImage">
 						<div class="overlay">
 							<div class="text"> Fillet salmon covered with maple syrup and pecans. Delicious and nutritious!
 							</div>
 						</div>
 					</div>
 				</a>
-				<p class="textUnderImage">Baked Chicken Parm</p>
+				<p class="textUnderImage">Paleo Salmon</p>
 			</div>
 			<div class="row">
-				<a href="jicama_sticks.html">
+				<a href="recipes/jicama_sticks.php">
 					<div class="containerimg">
-						<img src="jicama_sticks.jpg" class="gridImage">
+						<img src="../images/jicama_sticks.jpg" class="gridImage">
 						<div class="overlay">
 							<div class="text">T Sweet and fiery Jicama sticks with chili powder!
 							</div>
@@ -229,9 +232,9 @@ if ($_SESSION['email'] != ""){
 		</div>
 		<div class="column">
 			<div class="row">
-				<a href="paleo_yam.html">
+				<a href="recipes/paleo_yam.php">
 					<div class="containerimg">
-						<img src="paleo_roasted_yam.jpg" class="gridImage">
+						<img src="../images/paleo_roasted_yam.jpg" class="gridImage">
 						<div class="overlay">
 							<div class="text">Paleo Roasted Yan salad with Kale							
 							</div>
@@ -241,9 +244,9 @@ if ($_SESSION['email'] != ""){
 				<p class="textUnderImage">Paleo Roasted Yam Salad with Kale</p>
 			</div>
 			<div class="row">
-				<a href="abc_pudding.html">
+				<a href="recipes/abc_pudding.php">
 					<div class="containerimg">
-						<img src="Avocado, banana and chocolate pudding.jpg" class="gridImage">
+						<img src="../images/Avocado, banana and chocolate pudding.jpg" class="gridImage">
 						<div class="overlay">
 							<div class="text">Vegan pudding made with avocados, bananas and chocolate. Healthy and nutritious!
 							</div>

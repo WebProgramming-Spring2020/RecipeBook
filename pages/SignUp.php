@@ -2,7 +2,7 @@
 <head>
 	<meta charset="utf-8">
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="SignInStyle.css">
+	<link rel="stylesheet" type="text/css" href="../SignInStyle.css">
 </head>
 <body>
 

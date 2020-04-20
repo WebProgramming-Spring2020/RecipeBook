@@ -20,13 +20,13 @@ if ($_SESSION['email'] != ""){
 
 <head>
 	<title>Search Results</title>
-	<link rel="stylesheet" type="text/css" href="miniproject1.css">
+	<link rel="stylesheet" type="text/css" href="../miniproject1.css">
 </head>
 
 <body>
 	<div class="navbar">
 		<a href="index.php" class="topL">Home</a>
-		<img src="codecheflogo.jpg" class="codecheflogo">
+		<img src="../images/codecheflogo.jpg" class="codecheflogo">
 
 	</div>
 	<div class="topR">
