@@ -3,9 +3,13 @@
 session_start();
 
 $user = "Login";
+$link = "SignIn.php";
 
 if ($_SESSION['email'] != ""){
 	$user = $_SESSION['email'];
+	$u = explode("@",$user);
+	$user = $u[0];
+	$link = "account.php";
 }
 
 ?>
@@ -30,7 +34,7 @@ if ($_SESSION['email'] != ""){
 
 	</div>
 	<div class="topR">
-		<a href="SignIn.php" id="login" class="topRdis"><?php echo $user ?></a>
+		<a href="<?php echo $link ?>" id="login" class="topRdis"><?php echo $user ?></a>
 		<span class="tab"></span>
 		<a href="#FAQ" class="topRdis">FAQ</a>
 		<span class="tab"></span>

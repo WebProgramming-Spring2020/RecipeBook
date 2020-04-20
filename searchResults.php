@@ -1,4 +1,21 @@
 <!DOCTYPE html>
+
+<?php
+
+session_start();
+
+$user = "Login";
+$link = "SignIn.php";
+
+if ($_SESSION['email'] != ""){
+	$user = $_SESSION['email'];
+	$u = explode("@",$user);
+	$user = $u[0];
+	$link = "account.php";
+}
+
+?>
+
 <html>
 
 <head>
@@ -8,12 +25,12 @@
 
 <body>
 	<div class="navbar">
-		<a href="index.html" class="topL">Home</a>
+		<a href="index.php" class="topL">Home</a>
 		<img src="codecheflogo.jpg" class="codecheflogo">
 
 	</div>
 	<div class="topR">
-		<a href="login.html" class="topRdis">Login</a>
+		<a href="SignIn.php" id="login" class="topRdis"><?php echo $user ?></a>
 		<span class="tab"></span>
 		<a href="#FAQ" class="topRdis">FAQ</a>
 		<span class="tab"></span>

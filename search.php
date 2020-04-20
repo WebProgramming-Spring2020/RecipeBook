@@ -5,9 +5,9 @@ $meal = "";
 $diet = "";
 
 
-include "searchResults.html";
+include "searchResults.php";
 if (isset($_POST["submit"])) {
-	header("location: searchResults.html"); 
+	header("location: searchResults.php"); 
 	exit;
  }
 
