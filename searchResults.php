@@ -32,9 +32,9 @@ if ($_SESSION['email'] != ""){
 	<div class="topR">
 		<a href="SignIn.php" id="login" class="topRdis"><?php echo $user ?></a>
 		<span class="tab"></span>
-		<a href="#FAQ" class="topRdis">FAQ</a>
+		<a href="index.php#FAQ" class="topRdis">FAQ</a>
 		<span class="tab"></span>
-		<a href="#Contact" class="topRdis">Contact</a>
+		<a href="index.php#Contact" class="topRdis">Contact</a>
 		<span class="tab"></span>
 	</div>
 

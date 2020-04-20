@@ -29,7 +29,7 @@ if ($_SESSION['email'] != ""){
 	<script type="text/javascript" src="search.js"></script>
 	<script type="text/javascript" src="miniproject1.js"></script>
 	<div class="navbar">
-		<a href="#Home" class="topL">Home</a>
+		<a href="index.php#Home" class="topL">Home</a>
 		<img src="codecheflogo.jpg" class="codecheflogo">
 
 	</div>

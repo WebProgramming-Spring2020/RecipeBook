@@ -29,16 +29,16 @@ if ($_SESSION['email'] != ""){
 	<script type="text/javascript" src="search.js"></script>
 	<script type="text/javascript" src="miniproject1.js"></script>
 	<div class="navbar">
-		<a href="#Home" class="topL">Home</a>
+		<a href="index.php" class="topL">Home</a>
 		<img src="codecheflogo.jpg" class="codecheflogo">
 
 	</div>
 	<div class="topR">
 		<a href="<?php echo $link ?>" id="login" class="topRdis"><?php echo $user ?></a>
 		<span class="tab"></span>
-		<a href="#FAQ" class="topRdis">FAQ</a>
+		<a href="index.phpFAQ" class="topRdis">FAQ</a>
 		<span class="tab"></span>
-		<a href="#Contact" class="topRdis">Contact</a>
+		<a href="index.php#Contact" class="topRdis">Contact</a>
 		<span class="tab"></span>
 	</div>
 
