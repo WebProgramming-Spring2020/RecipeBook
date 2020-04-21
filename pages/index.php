@@ -3,14 +3,33 @@
 
 session_start();
 
-$user = "Login";
+$account = "Login";
 $link = "SignIn.php";
 
-if ($_SESSION['email'] != ""){
-	$user = $_SESSION['email'];
-	$u = explode("@",$user);
-	$user = $u[0];
-	$link = "account.php";
+$servername = "localhost";
+$username = "sagbenu1";
+$password = "sagbenu1";
+$database = "sagbenu1";
+
+
+$conn = new mysqli($servername, $username, $password, $database);
+
+if ($_SESSION['email'] != "") {
+    $account = "My Account ";
+    $user = $_SESSION['email'];
+    $sql = "select first_name from admin where email = '$user'";
+    $result = mysqli_query($conn, $sql);
+    
+    if ($result) {
+        $row = mysqli_fetch_array($result);
+        $user = $row[0];
+    } else {
+        $u = explode("@", $user);
+        $user = $u[0];
+    }
+    mysqli_close($conn);
+    
+    $link = "account.php";
 }
 
 
@@ -32,12 +51,12 @@ if ($_SESSION['email'] != ""){
 	<script type="text/javascript" src="search.js"></script>
 	<script type="text/javascript" src="miniproject1.js"></script>
 	<div class="navbar">
-		<a href="/pages/index.php#Home" class="topL">Home</a>
+		<a href="#Home" class="topL">Home</a>
 		<img src="../images/codecheflogo.jpg" class="codecheflogo">
 
 	</div>
 	<div class="topR">
-		<a href="<?php echo $link ?>" id="login" class="topRdis"><?php echo $user ?></a>
+		<a href="<?php echo $link ?>" id="login" class="topRdis"><?php echo $account ?></a>
 		<span class="tab"></span>
 		<a href="#FAQ" class="topRdis">FAQ</a>
 		<span class="tab"></span>
