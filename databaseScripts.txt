@@ -23,3 +23,5 @@ VALUES
 ('JICAMA SNACK STICKS',0,1,1,'SNACK',10),
 ('ABC AVACADO, BANANA, CHOCOLATE PUDDING',1,1,1,'BREAKFAST',15)
 ;
+
+ALTER TABLE recipe ADD COLUMN image varchar(255) AFTER time; update recipe set image = 'http://codd.cs.gsu.edu/~wlyons2/Projects/RecipeBook/images/chickenparm.jpeg' where name = 'CHICKEN PARMESANA';
