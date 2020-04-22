@@ -15,9 +15,9 @@ function startTimer(duration, display) {
     }, 1000);
 }
 
-var timeMeOne = function () {
+var timeMe5 = function () {
     var x = 5;
     var mins = 60 * x,
-        display = document.querySelector('#time1');
+        display = document.querySelector('#time5');
     startTimer(mins, display);
 };

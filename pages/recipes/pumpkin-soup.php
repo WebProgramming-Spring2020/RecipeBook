@@ -6,9 +6,9 @@ $account = "Login";
 $link = "SignIn.php";
 
 $servername = "localhost";
-$username = "wlyons2";
-$password = "wlyons2";
-$database = "wlyons2";
+$username = "sagbenu1";
+$password = "sagbenu1";
+$database = "sagbenu1";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
@@ -116,8 +116,8 @@ if ($_SESSION['email'] != "") {
 
 		<label class="container"> Roast for 60 to 65 minutes, stirring halfway through, until the pumpkin is fork-tender. <input type="checkbox"><span class="checkmark"></span></label>
 
-		<p style="border: 2px black solid; text-align: center;"><input onclick="timeMe()" type="button"
-				value="Start"><span id="time"> 60:00 </span></input>
+		<p style="border: 2px black solid; text-align: center;"><input onclick="timeMe60()" type="button"
+				value="Start"><span id="time60"> 60:00 </span></input>
 		</p>
 		<label class="container"> Let cool, and then remove the peel from the pumpkin. <input type="checkbox"> <span
 				class="checkmark"></span></label>

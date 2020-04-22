@@ -6,9 +6,9 @@ $account = "Login";
 $link = "SignIn.php";
 
 $servername = "localhost";
-$username = "wlyons2";
-$password = "wlyons2";
-$database = "wlyons2";
+$username = "sagbenu1";
+$password = "sagbenu1";
+$database = "sagbenu1";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
@@ -42,6 +42,7 @@ if ($_SESSION['email'] != "") {
 <body>
 	<script type="text/javascript" src="../../miniproject1.js"></script>
 	<script type="text/javascript" src="../../miniproject2.js"></script>
+	<script type="text/javascript" src="../../miniproject3.js"></script>
 
 	<!-- Nav Bar -->
 	<div class="navbar">
@@ -131,13 +132,13 @@ if ($_SESSION['email'] != "") {
 		<label class="container"> Bake the mixture into the oven and bake it for 1 hour and 10 minutes. <input type="checkbox">
 			<span class="checkmark"></span>
 		</label>
-		<p style="border: 2px black solid; text-align: center;"><input onclick="timeMeOne()" type = "button" value = "Start"><span id = "time"> 70:00 </span></input>
+		<p style="border: 2px black solid; text-align: center;"><input onclick="timeMe70()" type = "button" value = "Start"><span id = "time70"> 70:00 </span></input>
 		</p>
 		<label class="container"> Spread ketchup over the top of the meatloaf and return it to the oven for 25 minutes.
 		 <input type="checkbox"> <span class="checkmark"></span>
 		</label> 
 
-		<p style="border: 2px black solid; text-align: center;"><input onclick="timeMe()" type = "button" value = "Start"><span id = "time1"> 25:00 </span></input>
+		<p style="border: 2px black solid; text-align: center;"><input onclick="timeMe25()" type = "button" value = "Start"><span id = "time25"> 25:00 </span></input>
 		</p>
 
 		<label class="container"> Remove it from the oven and serve.		 		<input type="checkbox"> <span class="checkmark"></span>

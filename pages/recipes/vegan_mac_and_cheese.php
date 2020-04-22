@@ -6,9 +6,9 @@ $account = "Login";
 $link = "SignIn.php";
 
 $servername = "localhost";
-$username = "wlyons2";
-$password = "wlyons2";
-$database = "wlyons2";
+$username = "sagbenu1";
+$password = "sagbenu1";
+$database = "sagbenu1";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
@@ -36,7 +36,7 @@ if ($_SESSION['email'] != "") {
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="../../miniproject1.css">
-
+<title>Code Chefs: Vegan Mac and Cheese</title>
 </head>
 <body>
 <script type = "text/javascript" src = "../../miniproject1.js"></script>
@@ -131,14 +131,14 @@ if ($_SESSION['email'] != "") {
 
 		<label class="container"> Add the grated potato, garlic, garlic powder, 		onion powder, mustard powder, salt and red pepper flakes. Stir to combine, 		and cook, stirring constantly, for about 1 minute to enhance their 			flavors. <input type="checkbox"><span class="checkmark"></span></label>
 		
-		<p style="border: 2px black solid; text-align: center;"><input onclick="timeMe()" type = "button" value = "Start"><span id = "time"> 25:00 </span></input>
+		<p style="border: 2px black solid; text-align: center;"><input onclick="timeMe25()" type = "button" value = "Start"><span id = "time25"> 25:00 </span></input>
 		</p>
 		<label class="container"> Add the cashews and water, and stir to combine. 		Let the mixture come to a simmer. Continue simmering, stirring frequently 		and reducing heat as necessary to avoid a rapid boil, until the potatoes 		are completely tender and cooked through, about 5 to 8 minutes. <input 			type="checkbox"> <span class="checkmark"></span></label>
 
  		<label class="container"><input type="checkbox"> Carefully pour the 			mixture into a blender. Add the nutritional yeast and 2 teaspoons vinegar. 		Blend until the mixture is completely smooth, about 2 minutes, stopping to 		scrape down the sides if necessary. If the mixture won't blend easily or 		if you would prefer a thinner consistency, add water in &frac14; cup 			increments, blending after each one. <span class="checkmark"></span>
 		</label>
 		
-		<p style="border: 2px black solid; text-align: center;"><input onclick="timeMeOne()" type = "button" value = "Start"><span id = "time1"> 05:00 </span></input>
+		<p style="border: 2px black solid; text-align: center;"><input onclick="timeMe5()" type = "button" value = "Start"><span id = "time5"> 05:00 </span></input>
 		</p>
 		<label class="container"> <input type="checkbox"> Taste, and blend in 			additional salt until the sauce is utterly irresistible (I typically add 		at least another &#189; teaspoon). If it needs a little more zip, add the 		remaining teaspoon of vinegar. Blend again. <span class="checkmark"></			span></label>
 		

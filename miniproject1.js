@@ -15,9 +15,16 @@ function startTimer(duration, display) {
     }, 1000);
 }
 
-var timeMe = function () {
+var timeMe25 = function () {
     var x = 25;
     var mins = 60 * x,
-        display = document.querySelector('#time1');
+        display = document.querySelector('#time25');
+    startTimer(mins, display);
+};
+
+var timeMe60 = function () {
+    var x = 60;
+    var mins = 60 * x,
+        display = document.querySelector('#time60');
     startTimer(mins, display);
 };

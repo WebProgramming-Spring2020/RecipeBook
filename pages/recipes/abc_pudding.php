@@ -6,9 +6,9 @@ $account = "Login";
 $link = "SignIn.php";
 
 $servername = "localhost";
-$username = "wlyons2";
-$password = "wlyons2";
-$database = "wlyons2";
+$username = "sagbenu1";
+$password = "sagbenu1";
+$database = "sagbenu1";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
@@ -42,6 +42,7 @@ if ($_SESSION['email'] != "") {
 <body>
 	<script type="text/javascript" src="../../miniproject1.js"></script>
 	<script type="text/javascript" src="../../miniproject2.js"></script>
+	<script type="text/javascript" src="../../miniproject3.js"></script>
 
 	<!-- Nav Bar -->
 	<div class="navbar">
@@ -63,11 +64,13 @@ if ($_SESSION['email'] != "") {
 	<br>
 	<br>
 
-	<div class="recipeTitle">ABC(Avocado, Banana and Chocolate) Pudding</div>
+	<div class="recipeTitle">ABC Pudding</div>
 	<!-- End of Navbar -->
 
 	<br>
 	<br>
+
+	<div class="des">(Avocado, Banana and Chocolate)</div>
 
 	<div>
 		<img src="../../images/Avocado, banana and chocolate pudding.jpg" class="centerImg">
@@ -106,7 +109,7 @@ if ($_SESSION['email'] != "") {
 		<input type="checkbox"><span class="checkmark"></span>
 		</label> 
 
-		<p style="border: 2px black solid; text-align: center;"><input onclick="timeMeOne()" type = "button" value = "Start"><span id = "time"> 70:00 </span></input>
+		<p style="border: 2px black solid; text-align: center;"><input onclick="timeMe70()" type = "button" value = "Start"><span id = "time70"> 70:00 </span></input>
 		</p>
 
 		<label class="container"> After refrigerating, take out the pudding and place into serving bowls.

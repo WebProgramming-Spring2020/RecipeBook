@@ -6,9 +6,9 @@ $account = "Login";
 $link = "SignIn.php";
 
 $servername = "localhost";
-$username = "wlyons2";
-$password = "wlyons2";
-$database = "wlyons2";
+$username = "sagbenu1";
+$password = "sagbenu1";
+$database = "sagbenu1";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
@@ -130,7 +130,7 @@ if ($_SESSION['email'] != "") {
 		<input type="checkbox"><span class="checkmark"></span>
 		</label> 
 	
-		<p style="border: 2px black solid; text-align: center;"><input onclick="timeMe()" type = "button" value = "Start"><span id = "time1"> 25:00 </span></input>
+		<p style="border: 2px black solid; text-align: center;"><input onclick="timeMe25()" type = "button" value = "Start"><span id = "time25"> 25:00 </span></input>
 		</p>
 
 		<label class="container"> Meanwhile, heat the remaining 1 tablespoon of olive oil in a large skillet over medium head. Add the onion and garlic into the skillet and stir until they are golden brown. Add the kale into the mixture and stir.				<input type="checkbox"><span class="checkmark"></span>

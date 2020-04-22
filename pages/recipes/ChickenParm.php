@@ -6,9 +6,9 @@ $account = "Login";
 $link = "SignIn.php";
 
 $servername = "localhost";
-$username = "wlyons2";
-$password = "wlyons2";
-$database = "wlyons2";
+$username = "sagbenu1";
+$password = "sagbenu1";
+$database = "sagbenu1";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
@@ -108,7 +108,7 @@ if ($_SESSION['email'] != "") {
 			top and bake in the oven for 25 minutes. <input type="checkbox">
 			<span class="checkmark"></span>
 		</label>
-		<p style="border: 2px black solid; text-align: center;"><input onclick="timeMe()" type = "button" value = "Start"><span id = "time"> 25:00 </span></input>
+		<p style="border: 2px black solid; text-align: center;"><input onclick="timeMe25()" type = "button" value = "Start"><span id = "time25"> 25:00 </span></input>
 		</p>
 		<label class="container"> Remove from oven, spoon 1 tbsp sauce
 			over each piece of chicken and top each with 1 1/2 tbsp of shredded
@@ -117,7 +117,7 @@ if ($_SESSION['email'] != "") {
 		</label> <label class="container"> Bake 5 more minutes or until cheese
 			is melted. <input type="checkbox"> <span class="checkmark"></span>
 		</label>
-		<p style="border: 2px black solid; text-align: center;"><input onclick="timeMeOne()" type = "button" value = "Start"><span id = "time1"> 05:00 </span></input>
+		<p style="border: 2px black solid; text-align: center;"><input onclick="timeMe5()" type = "button" value = "Start"><span id = "time5"> 05:00 </span></input>
 		</p>
 		<p>(skinnytaste.com)</p>
 

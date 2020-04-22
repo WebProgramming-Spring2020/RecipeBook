@@ -6,9 +6,9 @@ $account = "Login";
 $link = "SignIn.php";
 
 $servername = "localhost";
-$username = "wlyons2";
-$password = "wlyons2";
-$database = "wlyons2";
+$username = "sagbenu1";
+$password = "sagbenu1";
+$database = "sagbenu1";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
@@ -125,7 +125,7 @@ if ($_SESSION['email'] != "") {
 		<span class="checkmark"></span>
 		</label>
 
-		<p style="border: 2px black solid; text-align: center;"><input onclick="timeMeOne()" type = "button" value = "Start"><span id = "time"> 70:00 </span></input>
+		<p style="border: 2px black solid; text-align: center;"><input onclick="timeMe70()" type = "button" value = "Start"><span id = "time70"> 70:00 </span></input>
 		</p>
 
 		<label class="container"> After refrigerating, preheat the oven to 425&#x2109.
@@ -136,7 +136,7 @@ if ($_SESSION['email'] != "") {
 		<input type="checkbox"> <span class="checkmark"></span>
 		</label> 
 
-		<p style="border: 2px black solid; text-align: center;"><input onclick="timeMe()" type = "button" value = "Start"><span id = "time1"> 25:00 </span></input>
+		<p style="border: 2px black solid; text-align: center;"><input onclick="timeMe25()" type = "button" value = "Start"><span id = "time25"> 25:00 </span></input>
 		</p>
 
 		<label class="container"> Remove it from the oven. Let it cool and then serve.		 		<input type="checkbox"> <span class="checkmark"></span>
