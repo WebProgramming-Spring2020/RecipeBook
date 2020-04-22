@@ -29,4 +29,9 @@ VALUES
 ;
 
 ALTER TABLE recipe ADD COLUMN image varchar(255) AFTER time;
+
 update recipe set image = 'http://codd.cs.gsu.edu/~wlyons2/Projects/RecipeBook/images/chickenparm.jpeg' where name = 'CHICKEN PARMESANA';
+
+update recipe set image = 'http://codd.cs.gsu.edu/~wlyons2/Projects/RecipeBook/images/jicama_sticks.jpg' where name = 'JICAMA SNACK STICKS';
+
+update recipe set image = 'http://codd.cs.gsu.edu/~wlyons2/Projects/RecipeBook/images/paleo_roasted_yam.jpg' where name = 'PALEO ROASTED YAM AND KALE';
