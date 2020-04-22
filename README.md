@@ -46,4 +46,4 @@ update recipe set image = 'http://codd.cs.gsu.edu/~wlyons2/Projects/RecipeBook/i
 
 update recipe set image = 'http://codd.cs.gsu.edu/~wlyons2/Projects/RecipeBook/images/pumpkinsoup.png' where name = 'CREAMY PUMPKIN SOUP';
 
-update recipe set image = 'http://codd.cs.gsu.edu/~wlyons2/Projects/RecipeBook/images/Avocado,bananaandchocolatepudding.png' where name = 'ABC AVACADO, BANANA, CHOCOLATE PUDDING';
+update recipe set image = 'http://codd.cs.gsu.edu/~wlyons2/Projects/RecipeBook/images/ABCPudding.png' where name = 'ABC AVACADO, BANANA, CHOCOLATE PUDDING';
