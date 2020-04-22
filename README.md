@@ -35,3 +35,15 @@ update recipe set image = 'http://codd.cs.gsu.edu/~wlyons2/Projects/RecipeBook/i
 update recipe set image = 'http://codd.cs.gsu.edu/~wlyons2/Projects/RecipeBook/images/jicama_sticks.jpg' where name = 'JICAMA SNACK STICKS';
 
 update recipe set image = 'http://codd.cs.gsu.edu/~wlyons2/Projects/RecipeBook/images/paleo_roasted_yam.jpg' where name = 'PALEO ROASTED YAM AND KALE';
+
+update recipe set image = 'http://codd.cs.gsu.edu/~wlyons2/Projects/RecipeBook/images/paleo_salmon.jpg' where name = 'PALEO SALMON';
+
+update recipe set image = 'http://codd.cs.gsu.edu/~wlyons2/Projects/RecipeBook/images/savory_meatloaf.jpeg' where name = 'SAVORY MEATLOAF';
+
+update recipe set image = 'http://codd.cs.gsu.edu/~wlyons2/Projects/RecipeBook/images/vegan_mac_cheese.jpeg' where name = 'VEGAN MACARONI AND CHEESE';
+
+update recipe set image = 'http://codd.cs.gsu.edu/~wlyons2/Projects/RecipeBook/images/vegan_mac_cheese.jpeg' where name = 'VEGAN MACARONI AND CHEESE';
+
+update recipe set image = 'http://codd.cs.gsu.edu/~wlyons2/Projects/RecipeBook/images/pumpkinsoup.png' where name = 'CREAMY PUMPKIN SOUP';
+
+update recipe set image = 'http://codd.cs.gsu.edu/~wlyons2/Projects/RecipeBook/images/Avocado, banana and chocolate pudding.png' where name = 'ABC AVACADO, BANANA, CHOCOLATE PUDDING';
