@@ -3,7 +3,8 @@
 
 Make sure you update $username, $password, $ and $database to your Codd username.
 
-Add this to your codd database to get the search function working.
+
+Add this to your codd database to get the search function working:
 
 CREATE TABLE recipe(
 name varchar(100) not null,
