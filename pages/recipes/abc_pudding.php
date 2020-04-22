@@ -73,7 +73,7 @@ if ($_SESSION['email'] != "") {
 	<div class="des">(Avocado, Banana and Chocolate)</div>
 
 	<div>
-		<img src="../../images/Avocado, banana and chocolate pudding.jpg" class="centerImg">
+		<img src="../../images/ABCPudding.png" class="centerImg">
 	</div>
 
 	<aside style="flex-basis: 33%; padding: 2em; margin: 2em;">
