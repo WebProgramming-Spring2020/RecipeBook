@@ -1,17 +1,33 @@
-<!DOCTYPE html>
-
 <?php
 
 session_start();
 
-$user = "Login";
+$account = "Login";
 $link = "SignIn.php";
 
-if ($_SESSION['email'] != ""){
-	$user = $_SESSION['email'];
-	$u = explode("@",$user);
-	$user = $u[0];
-	$link = "account.php";
+$servername = "localhost";
+$username = "wlyons2";
+$password = "wlyons2";
+$database = "wlyons2";
+
+$conn = new mysqli($servername, $username, $password, $database);
+
+if ($_SESSION['email'] != "") {
+    $account = "My Account ";
+    $user = $_SESSION['email'];
+    $sql = "select first_name from admin where email = '$user'";
+    $result = mysqli_query($conn, $sql);
+    
+    if (($result) && mysqli_num_rows($result) > 0 ){
+        $row = mysqli_fetch_array($result);
+        $user = $row[0];
+    } else {
+        $u = explode("@", $user);
+        $user = $u[0];
+    }
+    mysqli_close($conn);
+    
+    $link = "account.php";
 }
 
 ?>
@@ -30,7 +46,7 @@ if ($_SESSION['email'] != ""){
 
 	</div>
 	<div class="topR">
-		<a href="SignIn.php" id="login" class="topRdis"><?php echo $user ?></a>
+		<a href="SignIn.php" id="login" class="topRdis"><?php echo $account ?></a>
 		<span class="tab"></span>
 		<a href="index.php#FAQ" class="topRdis">FAQ</a>
 		<span class="tab"></span>

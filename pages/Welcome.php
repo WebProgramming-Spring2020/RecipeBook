@@ -15,9 +15,9 @@ if (isset($_POST['Submit'])) {
 }
 
 $servername = "localhost";
-$username = "sagbenu1";
-$password = "sagbenu1";
-$database = "sagbenu1";
+$username = "wlyons2";
+$password = "wlyons2";
+$database = "wlyons2";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
@@ -27,7 +27,7 @@ if ($_SESSION['email'] != "") {
     $sql = "select first_name from admin where email = '$user'";
     $result = mysqli_query($conn, $sql);
 
-    if ($result) {
+    if (($result) && mysqli_num_rows($result) > 0 ){
         $row = mysqli_fetch_array($result);
         $user = $row[0];
     } else {

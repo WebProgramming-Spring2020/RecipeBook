@@ -1,16 +1,14 @@
 <?php
 
-
 session_start();
 
 $account = "Login";
 $link = "SignIn.php";
 
 $servername = "localhost";
-$username = "sagbenu1";
-$password = "sagbenu1";
-$database = "sagbenu1";
-
+$username = "wlyons2";
+$password = "wlyons2";
+$database = "wlyons2";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
@@ -20,7 +18,7 @@ if ($_SESSION['email'] != "") {
     $sql = "select first_name from admin where email = '$user'";
     $result = mysqli_query($conn, $sql);
     
-    if ($result) {
+    if (($result) && mysqli_num_rows($result) > 0 ){
         $row = mysqli_fetch_array($result);
         $user = $row[0];
     } else {
@@ -31,8 +29,6 @@ if ($_SESSION['email'] != "") {
     
     $link = "account.php";
 }
-
-
 
 ?>
 
@@ -47,9 +43,9 @@ if ($_SESSION['email'] != "") {
 </head>
 
 <body>
-	<script type="text/javascript" src="dateTime.js"></script>
-	<script type="text/javascript" src="search.js"></script>
-	<script type="text/javascript" src="miniproject1.js"></script>
+	<script type="text/javascript" src="../dateTime.js"></script>
+	<script type="text/javascript" src="../search.js"></script>
+	<script type="text/javascript" src="../miniproject1.js"></script>
 	<div class="navbar">
 		<a href="#Home" class="topL">Home</a>
 		<img src="../images/codecheflogo.jpg" class="codecheflogo">
@@ -298,6 +294,7 @@ if ($_SESSION['email'] != "") {
 	<br id="FAQ">
 	<hr>
 	<br>
+	<br>
 	<div class="FAQ">
 		<h1>Frequently Asked Questions</h1>
 		<p>
@@ -360,6 +357,7 @@ if ($_SESSION['email'] != "") {
 	<br id="Contact">
 	<hr>
 	<br>
+	<br>
 	<div class="contact">
 		<h1>Contact</h1>
 		<p>Here at Code Chef, we strive for your satisfaction. If you have
@@ -380,7 +378,7 @@ if ($_SESSION['email'] != "") {
 		<p>
 			Email: <span class="contactinfoR"></span> <span class="contactinfoR"></span>
 			<span class="contactinfoR"></span> <span class="tabcontact"></span> <span class="tabcontact"></span>
-			CodeChef@WebProgramming.com
+			<a href="mailto:wlyons2@student.gsu.edu">CodeChef@WebProgramming.com</a>
 		</p>
 		<p>
 			Office Address: <span class="tabcontact"></span> <span class="tab"></span>

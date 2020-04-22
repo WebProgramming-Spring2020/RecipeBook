@@ -2,14 +2,32 @@
 
 session_start();
 
-$user = "Login";
-$link = "../SignIn.php";
+$account = "Login";
+$link = "SignIn.php";
 
-if ($_SESSION['email'] != ""){
+$servername = "localhost";
+$username = "wlyons2";
+$password = "wlyons2";
+$database = "wlyons2";
+
+$conn = new mysqli($servername, $username, $password, $database);
+
+if ($_SESSION['email'] != "") {
+    $account = "My Account ";
     $user = $_SESSION['email'];
-    $u = explode("@",$user);
-    $user = $u[0];
-    $link = "../account.php";
+    $sql = "select first_name from admin where email = '$user'";
+    $result = mysqli_query($conn, $sql);
+    
+    if ($result) {
+        $row = mysqli_fetch_array($result);
+        $user = $row[0];
+    } else {
+        $u = explode("@", $user);
+        $user = $u[0];
+    }
+    mysqli_close($conn);
+    
+    $link = "account.php";
 }
 
 ?>
@@ -33,7 +51,7 @@ if ($_SESSION['email'] != ""){
 			class="codecheflogo">
 	</div>
 	<div class="topR">
-		<a href="<?php echo $link ?>" id="login" class="topRdis"><?php echo $user ?></a>
+		<a href="<?php echo $link ?>" id="login" class="topRdis"><?php echo $account ?></a>
 		<a href="../index.php#FAQ" target="_blank">FAQ</a> <span class="tab"></span>
 		<a href="../index.php#Contact" target="_blank">Contact</a> <span
 			class="tab"></span>
