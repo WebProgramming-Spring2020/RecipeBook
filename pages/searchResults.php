@@ -6,9 +6,9 @@ $account = "Login";
 $link = "SignIn.php";
 
 $servername = "localhost";
-$username = "wlyons2";
-$password = "wlyons2";
-$database = "wlyons2";
+$username = "sagbenu1";
+$password = "sagbenu1";
+$database = "sagbenu1";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
@@ -78,14 +78,7 @@ if ($_SESSION['email'] != "") {
  }
 
  
-$sqlSearch = "SELECT name, meal, minutes FROM recipe WHERE name LIKE '%" . $search . "%'" . " " . $sqlDiet . " " . $sqlMeal . " " . $sqlTime;
-
-
-
-
-
-
- 
+$sqlSearch = "SELECT name, meal, minutes, image FROM recipe WHERE name LIKE '%" . $search . "%'" . " " . $sqlDiet . " " . $sqlMeal . " " . $sqlTime;
 
 
 ?>
@@ -196,7 +189,7 @@ $sqlSearch = "SELECT name, meal, minutes FROM recipe WHERE name LIKE '%" . $sear
 	<br>
 	<br>
 
-	<div class="recipeTitle">Results</div>
+<!--	<div class="recipeTitle">Results</div>  -->
 	<br>
 
 	<div class="searchResults">
@@ -208,13 +201,14 @@ $sqlSearch = "SELECT name, meal, minutes FROM recipe WHERE name LIKE '%" . $sear
 		if ($searchResult) {
 		    
 		    if (mysqli_num_rows($searchResult) > 0) {
-		        echo "<div><h1 style='text-align:center;'>Recipe</h1><table>";
-		        echo "<tr><th>Recipe</th><th>Meal</th><th>Minutes</th></tr>";
+		        echo "<div><h1 style='text-align:center;'>Results</h1><table class='centerTable'>";
+		        echo "<tr><th>Image</<th><th>Recipe</th><th>Meal</th><th>Minutes</th></tr>";
 		        while ($row = mysqli_fetch_array($searchResult)) {
 		            echo "<tr>";
+		            echo "<td><img class='thumbnail' src='" . $row[3] . "'></td>";
 		            echo "<td>" . $row[0] . "</td>";
 		            echo "<td>" . $row[1] . "</td>";
-		            echo "<td>$" . $row[2] . "</td>";
+		            echo "<td>" . $row[2] . "</td>";
 		            echo "</tr>";
 		        }
 		    }

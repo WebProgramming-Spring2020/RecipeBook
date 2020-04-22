@@ -723,7 +723,21 @@ select {
 	height: 40px;
 }
 
+.centerTable{
+	//width:80%;
+	margin: auto;
+}
 
+table.classname tr, th {
+	height: 100px;
+	padding: 20px;
+	font-size: larger;
+}
+
+img.thumbnail{
+	height: 167px;
+	width:auto;
+}
 /*}
 </
 style
