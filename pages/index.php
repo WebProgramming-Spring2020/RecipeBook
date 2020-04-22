@@ -88,11 +88,11 @@ if ($_SESSION['email'] != "") {
 	<h1>Search Recipes</h1>
 
 	<div class="searchBox">
-		<form method="POST" action="search.php">
+		<form method="POST" action="searchResults.php">
 			<div class="inner-form">
 				<div class="basic-search">
 					<div class="input-field">
-						<input id="search" type="text" placeholder="Type Keywords" />
+						<input id="search" name="search" type="text" placeholder="Type Keywords" />
 						<div class="icon-wrap">
 							<svg class="svg-inline--fa fa-search fa-w-16" fill="#ccc" aria-hidden="true"
 								data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -109,8 +109,8 @@ if ($_SESSION['email'] != "") {
 					<div class="row">
 						<div class="input-field">
 							<div class="input-select">
-								<select data-trigger="" name="choices-single-defaul">
-									<option placeholder="" value="">Diet</option>
+								<select data-trigger="" name="diet">
+									<option placeholder="" value="" >Diet</option>
 									<option>Paleo</option>
 									<option>Vegetarian</option>
 									<option>Vegan</option>
@@ -119,8 +119,8 @@ if ($_SESSION['email'] != "") {
 						</div>
 						<div class="input-field">
 							<div class="input-select">
-								<select data-trigger="" name="choices-single-defaul">
-									<option placeholder="" value="">Meal</option>
+								<select data-trigger="" name="meal">
+									<option placeholder="" value="" >Meal</option>
 									<option>Breakfast</option>
 									<option>Lunch/Dinner</option>
 									<option>Snack</option>
@@ -129,8 +129,8 @@ if ($_SESSION['email'] != "") {
 						</div>
 						<div class="input-field">
 							<div class="input-select">
-								<select data-trigger="" name="choices-single-defaul">
-									<option placeholder="" value="">Time</option>
+								<select data-trigger="" name="time">
+									<option placeholder="" value="" >Time</option>
 									<option>Less than 20 minutes</option>
 									<option>Less than 1 hour</option>
 									<option>More than 1 hour</option>

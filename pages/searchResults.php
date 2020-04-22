@@ -6,9 +6,9 @@ $account = "Login";
 $link = "SignIn.php";
 
 $servername = "localhost";
-$username = "sagbenu1";
-$password = "sagbenu1";
-$database = "sagbenu1";
+$username = "wlyons2";
+$password = "wlyons2";
+$database = "wlyons2";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
@@ -25,10 +25,68 @@ if ($_SESSION['email'] != "") {
         $u = explode("@", $user);
         $user = $u[0];
     }
-    mysqli_close($conn);
-    
+   
     $link = "account.php";
 }
+
+
+ if (isset($_POST["submit"])) {
+
+    $_SESSION['search'] = $_POST['search'];
+    $_SESSION['meal'] = $_POST['meal'];
+    $_SESSION['time'] = $_POST['time'];
+    $_SESSION['diet'] = $_POST['diet'];
+    $time = $_SESSION['time'];
+    $meal = strtoupper($_SESSION['meal']);
+    $diet = strtoupper($_SESSION['diet']);
+    $search = strtoupper($_SESSION['search']);
+
+ }
+
+ $sqlTime = "";
+ $sqlMeal = "";
+ $sqlDiet = "";
+ 
+ 
+ if($time == "Less than 20 minutes"){
+     $sqlTime = "AND minutes <= 20";
+ }
+ else if($time == "Less than 1 hour"){
+     $sqlTime = "AND minutes <= 60";
+ }
+ else if($time == "More than 1 hour"){
+     $sqlTime = "AND minutes > 60";
+ }
+ if($meal == "LUNCH/DINNER"){
+     $sqlMeal = "AND meal = 'DINNER'";
+ }
+ else if ($meal == "BREAKFAST"){
+     $sqlMeal = "AND meal = 'BREAKFAST'";
+ }
+ else if ($meal == "SNACK") {
+     $sqlMeal = "AND meal = 'SNACK'";
+ }
+ 
+ if($diet == "PALEO"){
+     $sqlDiet = "AND paleo = 1";
+ }
+ else if ($diet == "VEGAN") {
+     $sqlDiet = "AND vegan = 1";
+ }
+ else if ($diet == "VEGETARIAN") {
+     $sqlDiet = "AND vegetarian = 1";
+ }
+
+ 
+$sqlSearch = "SELECT name, meal, minutes FROM recipe WHERE name LIKE '%" . $search . "%'" . " " . $sqlDiet . " " . $sqlMeal . " " . $sqlTime;
+
+
+
+
+
+
+ 
+
 
 ?>
 
@@ -68,11 +126,11 @@ if ($_SESSION['email'] != "") {
 
 
 	<div class="searchBox">
-		<form method="POST" action="search.php">
+		<form method="POST" action="searchResults.php">
 			<div class="inner-form">
 				<div class="basic-search">
 					<div class="input-field">
-						<input id="search" type="text" placeholder="Type Keywords" />
+						<input id="search" name="search" type="text" placeholder="Type Keywords" />
 						<div class="icon-wrap">
 							<svg class="svg-inline--fa fa-search fa-w-16" fill="#ccc" aria-hidden="true"
 								data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -89,8 +147,8 @@ if ($_SESSION['email'] != "") {
 					<div class="row">
 						<div class="input-field">
 							<div class="input-select">
-								<select data-trigger="" name="choices-single-defaul">
-									<option placeholder="" value="">Diet</option>
+								<select data-trigger="" name="diet">
+									<option placeholder="" value="" >Diet</option>
 									<option>Paleo</option>
 									<option>Vegetarian</option>
 									<option>Vegan</option>
@@ -99,8 +157,8 @@ if ($_SESSION['email'] != "") {
 						</div>
 						<div class="input-field">
 							<div class="input-select">
-								<select data-trigger="" name="choices-single-defaul">
-									<option placeholder="" value="">Meal</option>
+								<select data-trigger="" name="meal">
+									<option placeholder="" value="" >Meal</option>
 									<option>Breakfast</option>
 									<option>Lunch/Dinner</option>
 									<option>Snack</option>
@@ -109,8 +167,8 @@ if ($_SESSION['email'] != "") {
 						</div>
 						<div class="input-field">
 							<div class="input-select">
-								<select data-trigger="" name="choices-single-defaul">
-									<option placeholder="" value="">Time</option>
+								<select data-trigger="" name="time">
+									<option placeholder="" value="" >Time</option>
 									<option>Less than 20 minutes</option>
 									<option>Less than 1 hour</option>
 									<option>More than 1 hour</option>
@@ -142,9 +200,34 @@ if ($_SESSION['email'] != "") {
 	<br>
 
 	<div class="searchResults">
-		<p class="search">Nothing matches your search </p>
-		<p class="search">Please try again</p>
-	</div>
+
+		<?php 
+		
+		$searchResult = mysqli_query($conn, $sqlSearch);
+
+		if ($searchResult) {
+		    
+		    if (mysqli_num_rows($searchResult) > 0) {
+		        echo "<div><h1 style='text-align:center;'>Recipe</h1><table>";
+		        echo "<tr><th>Recipe</th><th>Meal</th><th>Minutes</th></tr>";
+		        while ($row = mysqli_fetch_array($searchResult)) {
+		            echo "<tr>";
+		            echo "<td>" . $row[0] . "</td>";
+		            echo "<td>" . $row[1] . "</td>";
+		            echo "<td>$" . $row[2] . "</td>";
+		            echo "</tr>";
+		        }
+		    }
+		    else{
+		        echo "<h2 style='text-align:center;'>0 Results</h2>";
+		    }
+		    echo "</table>";
+		} else {
+		    echo "0 results<br>Please try again";
+		}
+		    mysqli_close($conn);
+		?>
+			</div>
 
 </body>
 
