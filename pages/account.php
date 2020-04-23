@@ -71,15 +71,12 @@ if ($_SESSION['email'] != "") {
 	<?php echo "<div class='title'>Hello " . $user . "!</div>"?>
 	<br>
  <div class="account">
-	<p>
-		Name: <?php echo $user;
-		  ?>
+	
 	<p>
 	
 		Email: <?php echo $_SESSION['email'];
 		 ?>
 </div>
-<br>
 
 	<p><h4><a href="recipesubmission.php">Submit a Recipe</h4>
 
