@@ -9,9 +9,9 @@
 </head>
 
 <body>
-	<script type="text/javascript" src="dateTime.js"></script>
-	<script type="text/javascript" src="search.js"></script>
-	<script type="text/javascript" src="miniproject1.js"></script>
+	<script type="text/javascript" src="../dateTime.js"></script>
+	<script type="text/javascript" src="../search.js"></script>
+	<script type="text/javascript" src="../miniproject1.js"></script>
 	<div class="navbar">
 		<a href="index.php" class="topL">Home</a> <img
 			src="../images/codecheflogo.jpg" class="codecheflogo">
@@ -67,7 +67,7 @@ if(mysqli_query($conn, $sql)) {
 			$newpassword = md5 ($_POST['newpassword']);
 			$confirmpassword = md5 ($_POST['confirmpassword']);
 
-		$queryget = mysql_query("SELECT password FROM users WHERE username = '$user'");
+		$queryget = mysql_query("SELECT password FROM admin WHERE username = '$user'");
 		$row = mysql_fetch_assoc($queryget);
 
 		$oldpassworddb = $row ['password'];

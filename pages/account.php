@@ -40,12 +40,13 @@ if ($_SESSION['email'] != "") {
 <title>Code Chef Recipes</title>
 <link rel="stylesheet" type="text/css" href="../miniproject1.css">
 
+
 </head>
 
 <body>
-	<script type="text/javascript" src="dateTime.js"></script>
-	<script type="text/javascript" src="search.js"></script>
-	<script type="text/javascript" src="miniproject1.js"></script>
+	<script type="text/javascript" src="../dateTime.js"></script>
+	<script type="text/javascript" src="../search.js"></script>
+	<script type="text/javascript" src="../miniproject1.js"></script>
 	<div class="navbar">
 		<a href="index.php" class="topL">Home</a> <img
 			src="../images/codecheflogo.jpg" class="codecheflogo">
@@ -77,7 +78,7 @@ if ($_SESSION['email'] != "") {
 		Username: <?php echo $user;
 		  ?>
 	<p>
-		Email: <?php echo $email;
+		Email: <?php echo $_SESSION['email'];
 		 ?>
 </div>
 <br>
