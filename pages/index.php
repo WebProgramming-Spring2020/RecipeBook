@@ -261,7 +261,7 @@ if ($_SESSION['email'] != "") {
 			<div class="row">
 				<a href="recipes/abc_pudding.php">
 					<div class="containerimg">
-						<img src="../images/Avocado, banana and chocolate pudding.jpg" class="gridImage">
+						<img src="../images/ABCPudding.jpg" class="gridImage">
 						<div class="overlay">
 							<div class="text">Vegan pudding made with avocados, bananas and chocolate. Healthy and nutritious!
 							</div>

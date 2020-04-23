@@ -65,11 +65,30 @@ if ($_SESSION['email'] != "") {
 	<br>
 	<br>
 	<br>
+	
 
-	<?php echo "<div class='title'>Welcome " . $user . "</div>"?>
+	<?php echo "<div class='title'>Hello " . $user . "!</div>"?>
+	<br>
+ <div class="account">
+	<p>
+		Name: <?php echo $user;
+		  ?>
+	<p>
+		Username: <?php echo $user;
+		  ?>
+	<p>
+		Email: <?php echo $email;
+		 ?>
+</div>
+<br>
 
-	<p style="text-align: center;"><a href="logout.php">Logout</a></p>
+	<p><h4><a href="recipesubmission.php">Submit a Recipe</h4>
+
+	<p><h4><a href="changepassword.php">Change Password</a></p></h4>
+
+	<p><h4><a href="logout.php">Logout</a></p></h4>
 	<br>
 	<br>
+
 </body>
 </html>

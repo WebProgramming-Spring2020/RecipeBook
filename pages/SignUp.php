@@ -17,7 +17,7 @@
 				<br><br>
 				<input type = "text" id = "username" name = "username" placeholder = "Username">
 				<br><br>
-				<input type = "text" id = "password" name = "password" placeholder = "Password">
+				<input type = "password" id = "password" name = "password" placeholder = "Password">
 				<br><br>
 				<input type = "text" id = "email" name = "email" placeholder = "Email">
 				<br><br>
@@ -25,7 +25,32 @@
 			</form>
 		</div>
 	</div>
+<?php
 
+	$servername = "localhost";
+	$username = "wlyons2";
+	$password = "wlyons2";
+	$database = "wlyons2";
+
+	// Create connection
+	$conn = new mysqli($servername, $username, $password, $database);
+
+	$email = mysqli_real_escape_string($conn, $_REQUEST['email']);
+	$first_name = mysqli_real_escape_string($conn, $_REQUEST['first_name']);
+	$last_name = mysqli_real_escape_string($conn, $_REQUEST['last_name']);
+	$username = mysqli_real_escape_string($conn, $_REQUEST['username']);
+	$password = mysqli_real_escape_string($conn, $_REQUEST['password']);
+
+	$sql = "insert into admin (first_name, last_name, username, password, email) values ('$first_name', '$last_name', '$username', '$password', '$email')";
+
+	
+	if(mysqli_query($conn, $sql)) {
+		echo "";
+	} else {
+		echo ""; 
+	}
+	mysqli_close($conn);
+?>
 
 </body>
 </html>
