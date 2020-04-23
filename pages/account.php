@@ -12,14 +12,6 @@ $database = "sagbenu1";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
-
-
-
-
-
-
-
-
 if ($_SESSION['email'] != "") {
     $account = "My Account ";
     $user = $_SESSION['email'];
@@ -38,7 +30,6 @@ if ($_SESSION['email'] != "") {
     $link = "account.php";
 }
 
-	
 ?>
 
 
@@ -86,7 +77,6 @@ if ($_SESSION['email'] != "") {
 		Email: <?php echo $_SESSION['email'];
 		 ?>
 </div>
-
 
 	<p><h4><a href="recipesubmission.php">Submit a Recipe</h4>
 
