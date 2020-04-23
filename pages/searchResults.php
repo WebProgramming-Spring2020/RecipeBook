@@ -201,7 +201,7 @@ if ($searchResult && mysqli_num_rows($searchResult) > 0) {
     }
     echo "</table></div>";
 } else {
-    echo "0 results<br>Please try again";
+    echo "<h2 style='text-align:center;'>0 Results</h2>";
 }
 mysqli_close($conn);
 ?>
