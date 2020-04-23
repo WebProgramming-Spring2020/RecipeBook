@@ -6,9 +6,9 @@ $account = "Login";
 $link = "SignIn.php";
 
 $servername = "localhost";
-$username = "wlyons2";
-$password = "wlyons2";
-$database = "wlyons2";
+$username = "sagbenu1";
+$password = "sagbenu1";
+$database = "sagbenu1";
 
 $conn = new mysqli($servername, $username, $password, $database);
 
@@ -378,7 +378,7 @@ if ($_SESSION['email'] != "") {
 		<p>
 			Email: <span class="contactinfoR"></span> <span class="contactinfoR"></span>
 			<span class="contactinfoR"></span> <span class="tabcontact"></span> <span class="tabcontact"></span>
-			<a href="mailto:wlyons2@student.gsu.edu">CodeChef@WebProgramming.com</a>
+			<a href="mailto:sagbenu1@student.gsu.edu">CodeChef@WebProgramming.com</a>
 		</p>
 		<p>
 			Office Address: <span class="tabcontact"></span> <span class="tab"></span>

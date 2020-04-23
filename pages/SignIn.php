@@ -39,9 +39,9 @@ session_start();
 <?php
 
 $servername = "localhost";
-$username = "wlyons2";
-$password = "wlyons2";
-$database = "wlyons2";
+$username = "sagbenu1";
+$password = "sagbenu1";
+$database = "sagbenu1";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);
