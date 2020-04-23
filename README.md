@@ -42,8 +42,10 @@ update recipe set image = 'http://codd.cs.gsu.edu/~wlyons2/Projects/RecipeBook/i
 
 update recipe set image = 'http://codd.cs.gsu.edu/~wlyons2/Projects/RecipeBook/images/vegan_mac_cheese.jpeg' where name = 'VEGAN MACARONI AND CHEESE';
 
-update recipe set image = 'http://codd.cs.gsu.edu/~wlyons2/Projects/RecipeBook/images/vegan_mac_cheese.jpeg' where name = 'VEGAN MACARONI AND CHEESE';
+/* Changed */
+update recipe set image = 'http://codd.cs.gsu.edu/~wlyons2/Projects/RecipeBook/images/vegan_mac_and_cheese.jpeg' where name = 'VEGAN MACARONI AND CHEESE';
 
 update recipe set image = 'http://codd.cs.gsu.edu/~wlyons2/Projects/RecipeBook/images/pumpkinsoup.png' where name = 'CREAMY PUMPKIN SOUP';
 
-update recipe set image = 'http://codd.cs.gsu.edu/~wlyons2/Projects/RecipeBook/images/ABCPudding.png' where name = 'ABC AVACADO, BANANA, CHOCOLATE PUDDING';
+/* Changed */
+update recipe set image = 'http://codd.cs.gsu.edu/~wlyons2/Projects/RecipeBook/images/ABCPudding.jpg' where name = 'ABC AVACADO, BANANA, CHOCOLATE PUDDING';
