@@ -19,7 +19,7 @@
 				<h2>Sign in</h2>
 				<input type="email" id="email" placeholder="Email" name="email" required /> <br>
 				<input type="password" id="password" placeholder="Password" name="password" required/> <br>
-				<a href="#">Forgot your password?</a> <br>
+				<a href="forgetpassword.php">Forgot your password?</a> <br>
 				<a href="./Welcome.php"><input type="submit" name="Submit" id="sign-in-button" value="Sign in"></a>
 			</form>
 		</div> <!-- end of sign-in container -->
