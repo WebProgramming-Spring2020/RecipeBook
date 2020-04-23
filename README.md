@@ -68,4 +68,4 @@ update recipe set link = 'recipes/paleo_salmon.php' where name = 'PALEO SALMON';
 
 update recipe set link = 'recipes/savory_meatloaf.php' where name = 'SAVORY MEATLOAF';
 
-update recipe set link = 'recipes/vegan_mac_and_chese.php' where name = 'VEGAN MACARONI AND CHEESE';
+update recipe set link = 'recipes/vegan_mac_and_cheese.php' where name = 'VEGAN MACARONI AND CHEESE';
