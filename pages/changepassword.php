@@ -19,7 +19,7 @@
 	</div>
 	<div class="topR">
 		<a href="index.php" class="topRdis">Home</a>
-		<span class="tab"></span> <a href="index.phpFAQ" class="topRdis">FAQ</a>
+		<span class="tab"></span> <a href="index.php#FAQ" class="topRdis">FAQ</a>
 		<span class="tab"></span> <a href="index.php#Contact" class="topRdis">Contact</a>
 		<span class="tab"></span>
 	</div>
