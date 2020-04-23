@@ -5,9 +5,9 @@ $account = "Login";
 $link = "SignIn.php";
 
 $servername = "localhost";
-$username = "sagbenu1";
-$password = "sagbenu1";
-$database = "sagbenu1";
+$username = "wlyons2";
+$password = "wlyons2";
+$database = "wlyons2";
 
 
 $conn = new mysqli($servername, $username, $password, $database);
