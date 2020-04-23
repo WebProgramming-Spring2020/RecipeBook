@@ -208,14 +208,15 @@ $sqlSearch = "SELECT name, meal, minutes FROM recipe WHERE name LIKE '%" . $sear
 		if ($searchResult) {
 		    
 		    if (mysqli_num_rows($searchResult) > 0) {
-		        echo "<div><h1 style='text-align:center;'>Recipe</h1><table>";
-		        echo "<tr><th>Recipe</th><th>Meal</th><th>Minutes</th></tr>";
+		        echo "<div><h1 style='text-align:center;'>Recipe</h1><table style='margin-left:27%;'>";
+		        echo "<tr style='text-align:center;'><th>Recipe</th><th>Meal</th><th>Minutes</th></tr>";
 		        while ($row = mysqli_fetch_array($searchResult)) {
-		            echo "<tr>";
-		            echo "<td>" . $row[0] . "</td>";
-		            echo "<td>" . $row[1] . "</td>";
-		            echo "<td>$" . $row[2] . "</td>";
+		            echo "<tr style='text-align:center;'>";
+		            echo "<td style='text-align:center;'>" . $row[0] . "</td>";
+		            echo "<td style='text-align:center;'>" . $row[1] . "</td>";
+		            echo "<td style='text-align:center;'>" . $row[2] . "</td>";
 		            echo "</tr>";
+		        
 		        }
 		    }
 		    else{
@@ -228,6 +229,13 @@ $sqlSearch = "SELECT name, meal, minutes FROM recipe WHERE name LIKE '%" . $sear
 		    mysqli_close($conn);
 		?>
 			</div>
+			<br>
+				<br>
+	<br>
+	<br>
+	<br>
+	<br>
+			<br>
 
 </body>
 

@@ -26,7 +26,7 @@ html> <style>*/
 		text-align: right;
 		width: 100%;
 		z-index: 2;
-		top: 0;
+		top: 0; 
 		font-size: 14pt;
 		font-family: "Playfair Display";
 		color: darkred;
@@ -278,6 +278,57 @@ h3 {
 	color: darkred;
 	z-index: -1;
 	letter-spacing: 5px;
+}
+
+h4 {
+	font-family: "Playfair Display";
+	letter-spacing: 0.1em;
+	line-height: 2;
+	text-align: center;
+
+}
+
+.account {
+
+
+	font-family: "Playfair Display";
+	letter-spacing: 0.1em;
+	line-height: 2;
+	top: 35%;
+	margin-left: 43%;
+
+}
+
+.rsubmit {
+	font-family: "Playfair Display";
+	letter-spacing: 0.1em;
+	line-height: 2;
+	top: 35%;
+	margin-left: 30%;
+
+}
+
+.submitbutton {
+
+	background: darkred;
+	color: white;
+	font-family: "Playfair Display";
+	letter-spacing: 0.1em;
+	border-style: outset;
+	border-color: white;
+	height: 50px;
+	width: 100px;
+	text-shadow:none;
+
+}
+.passchange {
+
+
+	font-family: "Playfair Display";
+	letter-spacing: 0.1em;
+	line-height: 2;
+	top: 35%;
+	text-align: center;
 }
 
 .codecheflogo {

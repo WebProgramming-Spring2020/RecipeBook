@@ -28,7 +28,7 @@
 			<h2>Don't have an account?</h2>
 			<p>Sign up and start enjoying our recipes!</p>
 			<a href= "SignUp.php"><button class="ghost">Join Now</button></a>
-		</div> <!-- end of sign-up container -->
+		</div> <!-- end of sign-up container --> 
 	</div> <!-- end of container -->
 <?php
 
