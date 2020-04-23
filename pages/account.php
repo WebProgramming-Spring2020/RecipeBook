@@ -75,9 +75,7 @@ if ($_SESSION['email'] != "") {
 		Name: <?php echo $user;
 		  ?>
 	<p>
-		Username: <?php echo $user;
-		  ?>
-	<p>
+	
 		Email: <?php echo $_SESSION['email'];
 		 ?>
 </div>

@@ -49,3 +49,23 @@ update recipe set image = 'http://codd.cs.gsu.edu/~wlyons2/Projects/RecipeBook/i
 
 /* Changed */
 update recipe set image = 'http://codd.cs.gsu.edu/~wlyons2/Projects/RecipeBook/images/ABCPudding.jpg' where name = 'ABC AVACADO, BANANA, CHOCOLATE PUDDING';
+
+/* Changes for searchResults.php links */
+
+ALTER TABLE recipe ADD COLUMN link varchar(255) AFTER image;
+
+update recipe set link = 'recipes/ChickenParm.php' where name = 'CHICKEN PARMESANA';
+
+update recipe set link = 'recipes/abc_pudding.php' where name = 'ABC AVACADO, BANANA, CHOCOLATE PUDDING';
+
+update recipe set link = 'recipes/pumpkin-soup.php' where name = 'CREAMY PUMPKIN SOUP';
+
+update recipe set link = 'recipes/jicama_sticks.php' where name = 'JICAMA SNACK STICKS';
+
+update recipe set link = 'recipes/paleo_yam.php' where name = 'PALEO ROASTED YAM AND KALE';
+
+update recipe set link = 'recipes/paleo_salmon.php' where name = 'PALEO SALMON';
+
+update recipe set link = 'recipes/savory_meatloaf.php' where name = 'SAVORY MEATLOAF';
+
+update recipe set link = 'recipes/vegan_mac_and_cheese.php' where name = 'VEGAN MACARONI AND CHEESE';

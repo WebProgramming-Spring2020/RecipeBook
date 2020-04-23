@@ -17,6 +17,7 @@ session_start();
 			<form action="SignIn.php" method="post">
 				<!-- Will link to home -->
 				<h2>Sign in</h2>
+
 				<input type="email" id="email" placeholder="Email" name="email"
 					required /> <br> <input type="password" id="password"
 					placeholder="Password" name="password" required /> <br> <a href="#">Forgot
