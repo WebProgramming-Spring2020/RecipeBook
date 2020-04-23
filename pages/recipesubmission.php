@@ -86,10 +86,10 @@ function test_input($data) {
 <div class="rsubmit">
 
 <form action="thankssubmission.php" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  Recipe Name: <br><input type="text" name="name" value="<?php echo $name;?>" required>
+  Recipe Name: <br><textarea rows="1" cols="75"  name="name" value="<?php echo $name;?>"  required></textarea>
   <span class="error"> <?php echo $nameErr;?></span>
   <br><br>
-  Ingredients: <br><textarea name="ing" rows="5" cols="40"><?php echo $ing;?></textarea>
+  Ingredients: <br><textarea name="ing" rows="5" cols="75"><?php echo $ing;?></textarea>
   <br><br>
   Directions: <br> <textarea name="comment" rows="100" cols="75"><?php echo $comment;?></textarea>
   <br>
