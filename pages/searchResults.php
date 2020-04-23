@@ -67,7 +67,7 @@ if ($diet == "PALEO") {
     $sqlDiet = "AND vegetarian = 1";
 }
 
-$sqlSearch = "SELECT name, meal, minutes, image FROM recipe WHERE name LIKE '%" . $search . "%'" . " " . $sqlDiet . " " . $sqlMeal . " " . $sqlTime;
+$sqlSearch = "SELECT name, meal, minutes, image, link FROM recipe WHERE name LIKE '%" . $search . "%'" . " " . $sqlDiet . " " . $sqlMeal . " " . $sqlTime;
 
 ?>
 
@@ -193,8 +193,8 @@ if ($searchResult && mysqli_num_rows($searchResult) > 0) {
     while ($row = mysqli_fetch_array($searchResult)) {
 
         echo "<tr>";
-        echo "<td><img class='thumbnail' src='" . $row[3] . "'></td>";
-        echo "<td>" . $row[0] . "</td>";
+        echo "<td><a href='" . $row[4] . "'><img class='thumbnail' src='" . $row[3] . "'></a></td>";
+        echo "<td><a href='" . $row[4] . "'>" . $row[0] . "</a></td>";
         echo "<td>" . $row[1] . "</td>";
         echo "<td>" . $row[2] . "</td>";
         echo "</tr>";
