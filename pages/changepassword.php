@@ -90,10 +90,10 @@ if(mysqli_query($conn, $sql)) {
 
 		else {
 		echo " <div class = 'passchange'>
-			<form action = 'changepassword.php' method = 'POST' >
-				Old password: <input type = 'text' name = 'oldpassword'><p>
-				New Password: <input type = 'text' name = 'newpassword'><p>
-				Confirm Password: <input type = 'text' name = 'confirmpassword'><p>
+			<form action = 'successfulpasswordchange.php' method = 'POST' >
+				Old password: <input type = 'text' name = 'oldpassword' required><p>
+				New Password: <input type = 'text' name = 'newpassword' required><p>
+				Confirm Password: <input type = 'text' name = 'confirmpassword' required><p>
 			<input type = 'submit' name = 'submit' value = 'Change Password'>
 			</form>
 			</div>
