@@ -76,6 +76,7 @@ if ($_SESSION['email'] != "") {
 		<img src="../../images/ABCPudding.jpg" class="centerImg">
 	</div>
 
+
 	<aside style="flex-basis: 33%; padding: 2em; margin: 2em;">
 		<!-- <h3>Paleo Pecan-Maple Salmon</h3> -->
 		<p>Ingredients:</p>
